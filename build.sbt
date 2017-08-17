@@ -4,7 +4,7 @@ organization  := "com.netaporter"
 
 version       := "0.0.1"
 
-scalaVersion  := "2.12.1"
+scalaVersion  := sys.props.getOrElse("scala.ver", "2.12.1")
 
 resolvers += "Sonatype" at "https://oss.sonatype.org/content/groups/public"
 
