@@ -12,4 +12,4 @@ scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8", "-featur
 
 libraryDependencies += "io.lemonlabs" %% "scala-uri" % sys.props.getOrElse("scala.uri.ver", "1.0.0")
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.4" % "test"
+libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.6-SNAP2" % "test"
