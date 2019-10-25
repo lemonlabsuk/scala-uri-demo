@@ -10,8 +10,8 @@ resolvers += "Sonatype" at "https://oss.sonatype.org/content/groups/public"
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8", "-feature")
 
-libraryDependencies += "io.lemonlabs" %% "scala-uri" % sys.props.getOrElse("scala.uri.ver", "1.4.8")
-
-libraryDependencies += "io.spray" %% "spray-json" % "1.3.5"
-
-libraryDependencies += "org.scalatest" %% "scalatest" % "3.0.8" % "test"
+libraryDependencies ++= Seq(
+  "io.lemonlabs" %% "scala-uri" % sys.props.getOrElse("scala.uri.ver", "2.0.0-M2"),
+  "io.lemonlabs" %% "scala-uri-circe" % sys.props.getOrElse("scala.uri.ver", "2.0.0-M2"),
+  "org.scalatest" %% "scalatest" % "3.0.8" % "test"
+)
